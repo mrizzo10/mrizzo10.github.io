@@ -1,0 +1,48 @@
+
+@import 'normalize';
+@import 'base';
+@import 'mixins';
+@import 'font';
+@import 'layout';
+
+/**********************************************************
+Project styles 
+**********************************************************/
+
+$blue-warby: #3AA3DE;
+$white: #fff;
+$text-black: #333;
+$black: #333;
+$blue-dark: #455560;
+$content-max-width: 600em / 16; //600px
+
+$utopia: 'Utopia Std', georgia, serif;
+$utopia-bold: 'Utopia Std Semibold', georgia, serif;
+$proxima-nova: 'Proxima Nova Rg', helvetica, sans-serif;
+
+$utopia-display: 'Utopia Std Display', georgia, serif;
+$utopia-display-italic: 'Utopia Std Display Italic', georgia, serif;
+
+html * {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+html, body {
+	height: 100%
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-family: $utopia;
+}
+
+img {
+	max-width: 100%;
+}
